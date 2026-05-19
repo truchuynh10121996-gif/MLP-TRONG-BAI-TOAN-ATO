@@ -1,27 +1,27 @@
 # ──────────────── Core Streamlit + Data ────────────────
-streamlit==1.39.0
-numpy==1.26.4
-pandas==2.2.2
-scikit-learn==1.5.2
-scipy==1.13.1
+streamlit>=1.36,<1.42
+numpy>=1.26,<2.1
+pandas>=2.2,<2.3
+scikit-learn>=1.4,<1.6
+scipy>=1.11,<1.14
 
 # ──────────────── Visualization ────────────────
-matplotlib==3.9.2
-seaborn==0.13.2
-plotly==5.24.1
+matplotlib>=3.7,<3.10
+seaborn>=0.13,<0.14
+plotly>=5.18,<6.0
 
 # ──────────────── Tầng 1 — LightGBM ────────────────
-lightgbm==4.5.0
-shap==0.46.0
-streamlit-shap==1.0.2
+lightgbm>=4.1,<4.6
+shap>=0.44,<0.47
+streamlit-shap>=1.0.2
 
 # ──────────────── Tầng 2 — Siamese Network ────────────────
-# Dùng tensorflow-cpu để giảm dung lượng (~500MB so với 1GB+ bản full)
-# Phù hợp với giới hạn RAM 1GB của Streamlit Community Cloud
-tensorflow-cpu==2.17.0
+# tensorflow-cpu nhẹ hơn (~500MB) so với bản full
+# Range tương thích Python 3.11 và RAM 1GB của Streamlit Cloud free tier
+tensorflow-cpu>=2.15,<2.18
 
 # ──────────────── Tầng 3 — rPPG ────────────────
-opencv-python-headless==4.10.0.84
+opencv-python-headless>=4.8,<4.11
 
 # ──────────────── Khung chat Gemini ────────────────
-google-generativeai==0.8.3
+google-generativeai>=0.7,<0.9
